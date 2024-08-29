@@ -5659,7 +5659,7 @@ type RepositoryPayload struct {
 			From string `json:"from"`
 		} `json:"homepage,omitempty"`
 		Topics struct {
-			From string `json:"from,omitempty"`
+			From []string `json:"from,omitempty"`
 		} `json:"topics,omitempty"`
 		Repository struct {
 			Name struct {
