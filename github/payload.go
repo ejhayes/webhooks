@@ -5758,6 +5758,7 @@ type RepositoryPayload struct {
 		OpenIssues       int64     `json:"open_issues"`
 		Watchers         int64     `json:"watchers"`
 		DefaultBranch    string    `json:"default_branch"`
+		Topics           []string  `json:"topics"`
 	} `json:"repository"`
 	Organization struct {
 		Login            string `json:"login"`
