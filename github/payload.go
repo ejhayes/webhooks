@@ -5458,6 +5458,7 @@ type PushPayload struct {
 		OpenIssues       int64     `json:"open_issues"`
 		Watchers         int64     `json:"watchers"`
 		DefaultBranch    string    `json:"default_branch"`
+		Topics	         []string    `json:"topics"`
 		Stargazers       int64     `json:"stargazers"`
 		MasterBranch     string    `json:"master_branch"`
 	} `json:"repository"`
