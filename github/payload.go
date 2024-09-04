@@ -5462,6 +5462,17 @@ type PushPayload struct {
 		Stargazers       int64     `json:"stargazers"`
 		MasterBranch     string    `json:"master_branch"`
 	} `json:"repository"`
+	Organization struct {
+		Login            string `json:"login"`
+		ID               int64  `json:"id"`
+		NodeID           string `json:"node_id"`
+		URL              string `json:"url"`
+		ReposURL         string `json:"repos_url"`
+		EventsURL        string `json:"events_url"`
+		MembersURL       string `json:"members_url"`
+		PublicMembersURL string `json:"public_members_url"`
+		AvatarURL        string `json:"avatar_url"`
+	} `json:"organization"`
 	Pusher struct {
 		Name  string `json:"name"`
 		Email string `json:"email"`
